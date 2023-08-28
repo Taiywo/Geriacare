@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.bg-image {
+    background-image: url(./Assets/login-image.png);
+    height: 100vh;
+}
+
+.dashboard{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+   
+    height: 100vh;
+}
+
+
+
+.AppHeader{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px 4px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.AppFooter{
+height: 50px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+.SideMenuAndPageContent{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.05) ;
+}
+.SideMenu{
+    height: 100%;
+}
+.SideMenuVertical{
+    height: 100%;
+}
+.PageContent{
+    padding-left: 12px;
+}
+
+
+
+.drop-in-2 {
+    animation: drop-in 1200ms ease 500ms backwards;
+} 
+
+.drop-out {
+    animation: drop-out 1200ms ease 500ms backwards;
+}
+.drop-up {
+    animation: drop-up 1200ms ease 500ms backwards;
+}
+
+
+ @keyframes drop-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+} 
+ @keyframes drop-out {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+} 
+
+@keyframes drop-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+} 
+@keyframes zoom-out {
+    from {
+        opacity: 0;
+        transform: scale()
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+} 
